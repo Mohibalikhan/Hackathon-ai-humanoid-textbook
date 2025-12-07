@@ -5,7 +5,7 @@
     "ur"
   ],
   "path": "i18n",
-  "currentLocale": "en",
+  "currentLocale": "ur",
   "localeConfigs": {
     "en": {
       "label": "English",
@@ -14,7 +14,7 @@
       "calendar": "gregory",
       "path": "en",
       "translate": false,
-      "url": "https://physicalhumanoidaitextbook.vercel.app",
+      "url": "https://hackathon-ai-humanoid-textbook-5s52.vercel.app",
       "baseUrl": "/"
     },
     "ur": {
@@ -24,7 +24,7 @@
       "calendar": "gregory",
       "path": "ur",
       "translate": true,
-      "url": "https://physicalhumanoidaitextbook.vercel.app",
+      "url": "https://hackathon-ai-humanoid-textbook-5s52.vercel.app",
       "baseUrl": "/ur/"
     }
   }

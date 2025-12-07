@@ -7,10 +7,10 @@ export default {
   "title": "Physical AI & Humanoid Robotics Textbook",
   "tagline": "Learning Physical AI and Robotics",
   "favicon": "img/favicon.ico",
-  "url": "https://physicalhumanoidaitextbook.vercel.app",
-  "baseUrl": "/",
-  "organizationName": "mohibalikhan",
-  "projectName": "physical-ai-humanoid-robotics-textbook",
+  "url": "https://hackathon-ai-humanoid-textbook-5s52.vercel.app",
+  "baseUrl": "/ur/",
+  "organizationName": "Mohibalikhan",
+  "projectName": "Hackathon-ai-humanoid-textbook",
   "deploymentBranch": "gh-pages",
   "onBrokenLinks": "throw",
   "i18n": {
@@ -104,7 +104,7 @@ export default {
           ]
         }
       ],
-      "copyright": "@All Rights Reserved | Developed by Mohib Ali Khan"
+      "copyright": "Copyright � 2025 Physical AI & Humanoid Robotics Textbook, Built with ❤️ by Subhan Kaladi."
     },
     "prism": {
       "theme": {
