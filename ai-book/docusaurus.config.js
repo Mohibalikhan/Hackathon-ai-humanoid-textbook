@@ -7,15 +7,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://physicalhumanoidaitextbook.vercel.app',
+  url: 'https://hackathon-ai-humanoid-textbook-5s52.vercel.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'mohibalikhan', // Usually your GitHub org/user name.
-  projectName: 'physical-ai-humanoid-robotics-textbook', // Usually your repo name.
+  organizationName: 'Mohibalikhan', // Usually your GitHub org/user name.
+  projectName: 'Hackathon-ai-humanoid-textbook', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
