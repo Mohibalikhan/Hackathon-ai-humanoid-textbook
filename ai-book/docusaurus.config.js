@@ -6,45 +6,34 @@ const config = {
   tagline: 'Learning Physical AI and Robotics',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
   url: 'https://hackathon-ai-humanoid-textbook-5s52.vercel.app/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Mohibalikhan', // Usually your GitHub org/user name.
-  projectName: 'Hackathon-ai-humanoid-textbook', // Usually your repo name.
+  organizationName: 'Mohibalikhan',
+  projectName: 'Hackathon-ai-humanoid-textbook',
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ur'], // Added Urdu locale
+    locales: ['en', 'ur'],
   },
-
-  
 
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo. Suffix with a / for GitHub pages deployment.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo. Suffix with a / for GitHub pages deployment.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -53,77 +42,86 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/ph-ai-logo.png',
-      navbar: {
-        title: 'Physical AI & Humanoid Robotics Textbook',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/ai-robotic.jpeg',
+  themeConfig: ({
+    image: 'img/ph-ai-logo.png',
+
+    /* ================= HEADER ================= */
+    navbar: {
+      title: 'Physical AI & Robotics',
+      logo: {
+        alt: 'Physical AI Logo',
+        src: 'img/ai-robotic.jpeg',
+      },
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: '📘 Textbook',
         },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Textbook',
+        {
+          href: 'https://github.com/Mohibalikhan',
+          label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://www.linkedin.com/in/mohib-ali-khan-64518a260/',
+          label: 'LinkedIn',
+          position: 'right',
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+          i18n: {
+            defaultLocale: 'en',
+            locales: ['en', 'ur'],
+            localeConfigs: {
+              ur: {
+                label: 'اردو',
+                direction: 'rtl',
+              },
+            },
           },
-          {
-            href: 'https://github.com/mohibalikhan',
-            label: 'GitHub',
-            position: 'right',
-          },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-            i18n: {
-  defaultLocale: 'en',
-  locales: ['en', 'ur'],
-  localeConfigs: {
-    ur: {
-      label: 'اردو',
-      direction: 'rtl',
+        },
+      ],
     },
-  },
-},
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Introduction',
-                to: '/docs/introduction/intro',
-              },
-            ],
-          },
-          {
-            title: 'Social Profiles',
-            items: [
-            
-              {
-                label: 'LinkedIN',
-                href: 'https://www.linkedin.com/in/mohib-ali-khan-64518a260/',
-              },
-              
-            ],
-          },
-         
-        ],
-        copyright: `@All Rights Reserved | Developed by Mohib Ali Khan`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+
+    /* ================= FOOTER ================= */
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: '📚 Documentation',
+          items: [
+            {
+              label: 'Introduction',
+              to: '/docs/introduction/intro',
+            },
+          ],
+        },
+        {
+          title: '🌐 Connect',
+          items: [
+            {
+              label: 'GitHub',
+              href: 'https://github.com/Mohibalikhan',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/mohib-ali-khan-64518a260/',
+            },
+          ],
+        },
+      ],
+      copyright:
+        `© ${new Date().getFullYear()} Mohib Ali Khan. All rights reserved.`,
+    },
+
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  }),
 };
 
 export default config;

@@ -8,7 +8,7 @@ export default {
   "tagline": "Learning Physical AI and Robotics",
   "favicon": "img/favicon.ico",
   "url": "https://hackathon-ai-humanoid-textbook-5s52.vercel.app",
-  "baseUrl": "/",
+  "baseUrl": "/ur/",
   "organizationName": "Mohibalikhan",
   "projectName": "Hackathon-ai-humanoid-textbook",
   "deploymentBranch": "gh-pages",
@@ -53,11 +53,16 @@ export default {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",
           "position": "left",
-          "label": "Textbook"
+          "label": "📘 Textbook"
         },
         {
-          "href": "https://github.com/mohibalikhan",
+          "href": "https://github.com/Mohibalikhan",
           "label": "GitHub",
+          "position": "right"
+        },
+        {
+          "href": "https://www.linkedin.com/in/mohib-ali-khan-64518a260/",
+          "label": "LinkedIn",
           "position": "right"
         },
         {
@@ -86,7 +91,7 @@ export default {
       "style": "dark",
       "links": [
         {
-          "title": "Docs",
+          "title": "📚 Documentation",
           "items": [
             {
               "label": "Introduction",
@@ -95,16 +100,20 @@ export default {
           ]
         },
         {
-          "title": "Social Profiles",
+          "title": "🌐 Connect",
           "items": [
             {
-              "label": "LinkedIN",
+              "label": "GitHub",
+              "href": "https://github.com/Mohibalikhan"
+            },
+            {
+              "label": "LinkedIn",
               "href": "https://www.linkedin.com/in/mohib-ali-khan-64518a260/"
             }
           ]
         }
       ],
-      "copyright": "@All Rights Reserved | Developed by Mohib Ali Khan"
+      "copyright": "Copyright � 2025 Physical AI & Humanoid Robotics Textbook, Built with ❤️ by Subhan Kaladi."
     },
     "prism": {
       "theme": {
